@@ -10,6 +10,7 @@
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
     <CreateInPlace>true</CreateInPlace>
+    <Icon>../template.png</Icon>
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="Client.csproj" File="Client.csproj" ReplaceParameters="true">

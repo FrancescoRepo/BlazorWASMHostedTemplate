@@ -15,8 +15,8 @@
   </TemplateData>
   <TemplateContent>
     <ProjectCollection>
-      <ProjectTemplateLink ProjectName="$safeprojectname$.Client" CopyParameters="true">Client\Client.vstemplate</ProjectTemplateLink>
       <ProjectTemplateLink ProjectName="$safeprojectname$.Server" CopyParameters="true" StartupProject="true">Server\Server.vstemplate</ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Client" CopyParameters="true">Client\Client.vstemplate</ProjectTemplateLink>
       <ProjectTemplateLink ProjectName="$safeprojectname$.Shared" CopyParameters="true">Shared\Shared.vstemplate</ProjectTemplateLink>
     </ProjectCollection>
   </TemplateContent>

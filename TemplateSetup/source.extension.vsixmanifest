@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="BlazorWASMHosted.22fbd61c-dcf9-464f-b724-80fe5d62f07e" Version="1.0" Language="en-US" Publisher="Francesco Colaianni" />
+        <DisplayName>.NET8 - Blazor WASM Application Hosted Template</DisplayName>
+        <Description xml:space="preserve">A template for creating a Blazor WASM .NET 8 application hosted by an ASP.NET Core server.</Description>
+        <License>license.txt</License>
+        <Icon>template.png</Icon>
+        <PreviewImage>template.png</PreviewImage>
+        <Tags>blazor wasm .net8 csharp template</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0, 18.0)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[17.0,18.0)" DisplayName="Visual Studio core editor" />
+        <Prerequisite Id="Microsoft.NetCore.Component.Runtime.8.0" Version="[17.11.35303.118,18.0)" DisplayName=".NET 8.0 Runtime (Long Term Support)" />
+    </Prerequisites>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="File" Path="ProjectTemplates" d:TargetPath="ProjectTemplates\Template.zip" />
+    </Assets>
+</PackageManifest>
