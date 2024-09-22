@@ -11,6 +11,7 @@
     <CreateNewFolder>true</CreateNewFolder>
     <DefaultName>BlazorWASMHosted</DefaultName>
     <ProvideDefaultName>true</ProvideDefaultName>
+    <Icon>template.png</Icon>
   </TemplateData>
   <TemplateContent>
     <ProjectCollection>
