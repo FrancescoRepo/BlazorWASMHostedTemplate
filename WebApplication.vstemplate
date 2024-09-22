@@ -1,0 +1,22 @@
+<VSTemplate Version="3.0.0" Type="ProjectGroup" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Blazor WASM Hosted</Name>
+    <Description>A template for creating a Blazor WebAssembly project hosted by an ASP.NET Core server with a shared library.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <LanguageTag>csharp</LanguageTag>
+    <PlatformTag>windows</PlatformTag>
+    <PlatformTag>linux</PlatformTag>
+    <ProjectTypeTag>web</ProjectTypeTag>
+    <SortOrder>1</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>BlazorWASMHosted</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectCollection>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Client" CopyParameters="true">Client\Client.vstemplate</ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Server" CopyParameters="true" StartupProject="true">Server\Server.vstemplate</ProjectTemplateLink>
+      <ProjectTemplateLink ProjectName="$safeprojectname$.Shared" CopyParameters="true">Shared\Shared.vstemplate</ProjectTemplateLink>
+    </ProjectCollection>
+  </TemplateContent>
+</VSTemplate>

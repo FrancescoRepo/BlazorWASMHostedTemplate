@@ -1,0 +1,32 @@
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Web API Server</Name>
+    <Description>ASP.NET Core Web API project for the solution</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>20</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>$projectname$</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Server.csproj" File="Server.csproj" ReplaceParameters="true">
+      <Folder Name="Controllers" TargetFolderName="Controllers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="WeatherForecastController.cs">WeatherForecastController.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="launchSettings.json">launchSettings.json</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.Development.json">appsettings.Development.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.json">appsettings.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Server.http">Server.http</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="WeatherForecast.cs">WeatherForecast.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+  <CustomParameters>
+    <CustomParameter Name="$safeprojectname$" Value="$safeprojectname$" />
+  </CustomParameters>
+</VSTemplate>
