@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="BlazorWASMHosted.22fbd61c-dcf9-464f-b724-80fe5d62f07e" Version="1.0" Language="en-US" Publisher="Francesco Colaianni" />
-        <DisplayName>.NET8 - Blazor WASM Application Hosted Template</DisplayName>
+        <Identity Id="BlazorWASMHosted.22fbd61c-dcf9-464f-b724-80fe5d62f07c" Version="1.0.1" Language="en-US" Publisher="Francesco Colaianni" />
+        <DisplayName>Blazor WASM Hosted Template - .NET8</DisplayName>
         <Description xml:space="preserve">A template for creating a Blazor WASM .NET 8 application hosted by an ASP.NET Core server.</Description>
         <License>license.txt</License>
         <Icon>template.png</Icon>

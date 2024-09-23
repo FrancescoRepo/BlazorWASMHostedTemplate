@@ -14,7 +14,7 @@
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="Shared.csproj" File="Shared.csproj" ReplaceParameters="true">
-        <ProjectItem ReplaceParameters="true" TargetFileName="Class1.cs">Class1.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="WeatherForecast.cs">WeatherForecast.cs</ProjectItem>
     </Project>
   </TemplateContent>
   <CustomParameters>

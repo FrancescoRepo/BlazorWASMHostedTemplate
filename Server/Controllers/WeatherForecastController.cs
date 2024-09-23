@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using $ext_safeprojectname$.Shared;
 
 namespace $safeprojectname$.Controllers
 {
