@@ -11,13 +11,11 @@ foreach ($folder in $foldersToClean) {
     if (Test-Path $binFolder) {
         Remove-Item -Recurse -Force $binFolder
         Write-Host "Deleted: $binFolder"
-        Start-Sleep -Seconds 1  # Delay for 1 second
     }
 
     if (Test-Path $objFolder) {
         Remove-Item -Recurse -Force $objFolder
         Write-Host "Deleted: $objFolder"
-        Start-Sleep -Seconds 1  # Delay for 1 second
     }
 }
 
@@ -37,12 +35,10 @@ $zipFilePath = Join-Path $rootDir $zipFileName
 if (Test-Path $zipFilePath) {
     Remove-Item $zipFilePath -Force
     Write-Host "Old zip file deleted: $zipFilePath"
-    Start-Sleep -Seconds 1  # Delay for 1 second
 }
 
 Compress-Archive -Path $itemsToZip -DestinationPath $zipFilePath
 Write-Host "Zip file created: $zipFilePath"
 
 # Final sleep for effect
-Start-Sleep -Seconds 2
 Write-Host "Process complete."
